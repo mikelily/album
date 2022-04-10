@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4F1A57FE8338D10F1C6E74 /* Pods_album.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C23607C6A659976B558417 /* Pods_album.framework */; };
 		F570495327F2093E008EE97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570495227F2093E008EE97C /* AppDelegate.swift */; };
 		F570495527F2093E008EE97C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570495427F2093E008EE97C /* SceneDelegate.swift */; };
 		F570495727F2093E008EE97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570495627F2093E008EE97C /* ViewController.swift */; };
 		F570495A27F2093E008EE97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F570495827F2093E008EE97C /* Main.storyboard */; };
 		F570495C27F20945008EE97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F570495B27F20945008EE97C /* Assets.xcassets */; };
 		F570495F27F20945008EE97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F570495D27F20945008EE97C /* LaunchScreen.storyboard */; };
+		F570496827F4E248008EE97C /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570496727F4E247008EE97C /* AlbumData.swift */; };
+		F570496A27F4E4FA008EE97C /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570496927F4E4FA008EE97C /* AlbumManager.swift */; };
+		F570496D27F5161A008EE97C /* addTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570496C27F5161A008EE97C /* addTapGestureRecognizer.swift */; };
+		F58E552627FC236B0039885C /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E552527FC236B0039885C /* GlobalVar.swift */; };
+		F5B8875327FC8D1C00AC9715 /* albumCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8875227FC8D1C00AC9715 /* albumCellView.swift */; };
+		F5B8875527FCF62100AC9715 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8875427FCF62100AC9715 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		568FCACB754066E0E9640C60 /* Pods-album.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-album.release.xcconfig"; path = "Target Support Files/Pods-album/Pods-album.release.xcconfig"; sourceTree = "<group>"; };
+		60F3A0A15241BE78BC3B023E /* Pods-album.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-album.debug.xcconfig"; path = "Target Support Files/Pods-album/Pods-album.debug.xcconfig"; sourceTree = "<group>"; };
+		E8C23607C6A659976B558417 /* Pods_album.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_album.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F570494F27F2093E008EE97C /* album.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = album.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F570495227F2093E008EE97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F570495427F2093E008EE97C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		F570495B27F20945008EE97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F570495E27F20945008EE97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F570496027F20945008EE97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F570496727F4E247008EE97C /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
+		F570496927F4E4FA008EE97C /* AlbumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
+		F570496C27F5161A008EE97C /* addTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		F58E552527FC236B0039885C /* GlobalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
+		F5B8875227FC8D1C00AC9715 /* albumCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumCellView.swift; sourceTree = "<group>"; };
+		F5B8875427FCF62100AC9715 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4F1A57FE8338D10F1C6E74 /* Pods_album.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3EAE82A76D6E86902FC9CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8C23607C6A659976B558417 /* Pods_album.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC84F607AA3CD36A64010DF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F3A0A15241BE78BC3B023E /* Pods-album.debug.xcconfig */,
+				568FCACB754066E0E9640C60 /* Pods-album.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F570494627F2093E008EE97C = {
 			isa = PBXGroup;
 			children = (
 				F570495127F2093E008EE97C /* album */,
 				F570495027F2093E008EE97C /* Products */,
+				CC84F607AA3CD36A64010DF3 /* Pods */,
+				A3EAE82A76D6E86902FC9CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +92,9 @@
 		F570495127F2093E008EE97C /* album */ = {
 			isa = PBXGroup;
 			children = (
+				F5B8875127FC8CEF00AC9715 /* UIView */,
+				F570496B27F515DA008EE97C /* Extension */,
+				F570496627F4E214008EE97C /* Models */,
 				F570495227F2093E008EE97C /* AppDelegate.swift */,
 				F570495427F2093E008EE97C /* SceneDelegate.swift */,
 				F570495627F2093E008EE97C /* ViewController.swift */,
@@ -67,6 +106,33 @@
 			path = album;
 			sourceTree = "<group>";
 		};
+		F570496627F4E214008EE97C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F570496727F4E247008EE97C /* AlbumData.swift */,
+				F570496927F4E4FA008EE97C /* AlbumManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F570496B27F515DA008EE97C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F570496C27F5161A008EE97C /* addTapGestureRecognizer.swift */,
+				F58E552527FC236B0039885C /* GlobalVar.swift */,
+				F5B8875427FCF62100AC9715 /* UIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F5B8875127FC8CEF00AC9715 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F5B8875227FC8D1C00AC9715 /* albumCellView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F570496327F20945008EE97C /* Build configuration list for PBXNativeTarget "album" */;
 			buildPhases = (
+				59A7FCD8A9AD184999211013 /* [CP] Check Pods Manifest.lock */,
 				F570494B27F2093E008EE97C /* Sources */,
 				F570494C27F2093E008EE97C /* Frameworks */,
 				F570494D27F2093E008EE97C /* Resources */,
+				C5F510ACD1CFDA38B46FBB41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +201,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59A7FCD8A9AD184999211013 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-album-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F510ACD1CFDA38B46FBB41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-album/Pods-album-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-album/Pods-album-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-album/Pods-album-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F570494B27F2093E008EE97C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B8875327FC8D1C00AC9715 /* albumCellView.swift in Sources */,
+				F570496A27F4E4FA008EE97C /* AlbumManager.swift in Sources */,
 				F570495727F2093E008EE97C /* ViewController.swift in Sources */,
+				F570496827F4E248008EE97C /* AlbumData.swift in Sources */,
+				F58E552627FC236B0039885C /* GlobalVar.swift in Sources */,
+				F5B8875527FCF62100AC9715 /* UIImageView.swift in Sources */,
+				F570496D27F5161A008EE97C /* addTapGestureRecognizer.swift in Sources */,
 				F570495327F2093E008EE97C /* AppDelegate.swift in Sources */,
 				F570495527F2093E008EE97C /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +400,7 @@
 		};
 		F570496427F20945008EE97C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F3A0A15241BE78BC3B023E /* Pods-album.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +429,7 @@
 		};
 		F570496527F20945008EE97C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568FCACB754066E0E9640C60 /* Pods-album.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
